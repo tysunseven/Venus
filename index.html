@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参与信息展示</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入 XLSX.js 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>参与</h1>
+            <input type="file" id="uploadExcel" accept=".xlsx" />
+        </div>
+
+        <div class="list" id="dataList">
+            <!-- 动态加载的数据条目 -->
+        </div>
+    </div>
+
+    <div class="details" id="detailsPage" style="display: none;">
+        <button id="backBtn">返回</button>
+        <h2>个人情况</h2>
+        <p id="personalInfo">点击条目以查看详情</p>
+        <h2>家庭信息</h2>
+        <p id="familyInfo"></p>
+        <h2>志愿者印象</h2>
+        <p id="volunteerInfo"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
